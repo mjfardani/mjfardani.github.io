@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/house.png" />
+    <title>My Portfolio - Muhammad Jauhar Fardani</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div id="header">
+      <div class="container">
+        <!-- nav -->
+        <nav>
+          <h3 class="navbarkiri">MJFARDANI</h3>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Freelance Editor</p>
+          <h1>Hi, I'm <span>Fardani</span><br />From Indonesia</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- akhir nav -->
+    <!-- akhir header -->
+    <!-- about -->
+    <div id="about" class="about" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/mj.jpg" alt="col 1" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus hic mollitia ducimus non nostrum deserunt maiores ratione dolorum consequatur. Dolore excepturi quaerat accusantium corrupti unde sint voluptate natus esse
+              exercitationem vero inventore culpa repellat reprehenderit voluptates sapiente, provident perspiciatis veniam!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+              <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+              <p class="tab-links" onclick="opentab('education', event)">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/Web Interface</li>
+              </ul>
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/Web Interface</li>
+              </ul>
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/Web Interface</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/Web Interface</li>
+              </ul>
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/Web Interface</li>
+              </ul>
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/Web Interface</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/Web Interface</li>
+              </ul>
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/Web Interface</li>
+              </ul>
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/Web Interface</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div class="services" id="services" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="70" data-aos-offset="0">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, sequi explicabo. Aliquam, incidunt autem? Dolores, dicta? Ad vitae repellendus in?</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa fa-sharp fa-solid fa-crop-simple"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat iste et amet vero ut dolores consectetur dolorem quos, assumenda tenetur earum doloribus optio voluptas ea!</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/mj.jpg" alt="work work-list" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit laudantium perspiciatis!</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/mj.jpg" alt="work work-list" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit laudantium perspiciatis!</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/mj.jpg" alt="work work-list" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odit laudantium perspiciatis!</p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1>Contact Me</h1>
+            <p>muhjauharfardani@gmail.com</p>
+            <p>089503870208</p>
+            <div class="social-icons">
+              <a class="sosmed" href="#"><img src="img/github.png" alt="" /></a>
+              <a class="sosmed" href="#"><img src="img/linkedin.png" alt="" /></a>
+              <a class="sosmed" href="#"><img src="img/instagram.png" alt="" /></a>
+            </div>
+            <a href="" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright by <span>mjauharfardani</span></p>
+      </div>
+    </div>
+    <!-- script -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname, event) {
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active-link");
+        }
+
+        for (var i = 0; i < tabcontents.length; i++) {
+          tabcontents[i].classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+
+        setTimeout(function () {
+          document.getElementById(tabname).classList.add("active-tab");
+        }, 300); // Delay adding the active-tab class to allow fade-in transition
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "200px";
+      }
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://kit.fontawesome.com/dca16c1ed9.js" crossorigin="anonymous"></script>
+  </body>
+</html>
