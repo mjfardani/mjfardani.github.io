@@ -14,12 +14,23 @@ body {
   color: #fff;
 }
 
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ubah nilai z-index menjadi -1 */
+}
+
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(img/bg.jpg);
+  /* background-image: url(img/bg.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+  position: relative; /* Tambahkan properti position dan z-index pada header */
+  z-index: 1;
 }
 
 .container {
@@ -77,7 +88,6 @@ nav ul li a:hover::after {
 .header-text h1 {
   font-size: 60px;
   margin-top: 20px;
-  mix-blend-mode: difference;
 }
 .header-text h1 span {
   color: #d55929;
@@ -260,7 +270,7 @@ nav ul li a:hover::after {
   text-align: center;
 }
 .work:hover img {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 .work:hover .layer {
   height: 100%;
@@ -353,9 +363,9 @@ nav .fa-solid {
   display: none;
 }
 @media only screen and (max-width: 600px) {
-  #header {
+  /* #header {
     background-image: url(img/mj.jpg);
-  }
+  } */
   .header-text {
     margin-top: 100%;
     font-size: 16px;
