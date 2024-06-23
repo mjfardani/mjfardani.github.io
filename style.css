@@ -17,10 +17,10 @@ body {
 #particles-js {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
-  z-index: -1; /* Ubah nilai z-index menjadi -1 */
+  z-index: 2; /* Ubah nilai z-index menjadi -1 */
 }
 
 #header {
@@ -29,8 +29,6 @@ body {
   /* background-image: url(img/bg.jpg);
   background-size: cover;
   background-position: center; */
-  position: relative; /* Tambahkan properti position dan z-index pada header */
-  z-index: 1;
 }
 
 .container {
@@ -43,6 +41,8 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 20px;
+  position: relative;
+  z-index: 3;
 }
 nav .navbarkiri {
   padding-left: 2rem;
@@ -98,6 +98,8 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 10px;
   color: #ababab;
+  position: relative;
+  z-index: 2;
 }
 
 .row {
@@ -184,6 +186,8 @@ nav ul li a:hover::after {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
+  position: relative;
+  z-index: 3;
 }
 
 .services-list div {
@@ -231,6 +235,7 @@ nav ul li a:hover::after {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  z-index: 3;
 }
 .work img {
   width: 100%;
@@ -293,9 +298,13 @@ nav ul li a:hover::after {
 }
 .contact-left {
   flex-basis: 35%;
+  position: relative;
+  z-index: 3;
 }
 .contact-right {
   flex-basis: 60%;
+  position: relative;
+  z-index: 3;
 }
 .contact-left p {
   margin-top: 30px;
@@ -333,7 +342,7 @@ nav ul li a:hover::after {
 }
 form input,
 form textarea {
-  width: 80%;
+  width: 97%;
   border: 0;
   outline: none;
   background: #1d1d1d;
@@ -355,7 +364,6 @@ form .btn2 {
   height: 5vh;
   text-align: center;
   justify-content: center;
-  background-color: #141212;
 }
 .copyright p span {
   color: #fff;
