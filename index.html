@@ -28,7 +28,7 @@
           <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>Web Dev, Design Graph</p>
+          <p class="animasi"></p>
           <h1>Hi, I'm <span>Fardani</span><br />From Indonesia</h1>
         </div>
       </div>
@@ -301,7 +301,20 @@
       src="https://kit.fontawesome.com/dca16c1ed9.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const text = document.querySelector(".animasi");
+      const textload = () => {
+        setTimeout(() => {
+          text.textContent = "Web Developer.";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "Design Graphic.";
+        }, 5000);
+      };
 
+      textload();
+      setInterval(textload, 10000);
+    </script>
     <script src="particles.min.js"></script>
     <script src="app.js"></script>
   </body>

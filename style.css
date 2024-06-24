@@ -85,13 +85,45 @@ nav ul li a:hover::after {
   padding-left: 20px;
 }
 
+.animasi {
+  position: relative;
+  overflow: hidden; /* Menambahkan overflow hidden di sini */
+  display: inline-block; /* Menambahkan inline-block agar ukuran sesuai dengan konten */
+}
+
+.animasi:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%; /* Memulai dari luar kiri elemen */
+  height: 100%; /* Sesuaikan dengan tinggi elemen induk */
+  width: 200%; /* Menutupi seluruh lebar elemen induk */
+  background-color: #141212;
+  border-left: 5px solid #d55929;
+  animation: animate 5s steps(12) infinite;
+}
+
+@keyframes animate {
+  0% {
+    left: 0%; /* Memulai dari luar kiri elemen */
+  }
+  50% {
+    left: 100%; /* Bergerak ke kanan penuh */
+  }
+  100% {
+    left: 0%; /* Kembali ke luar kiri elemen */
+  }
+}
+
 .header-text h1 {
   font-size: 60px;
   margin-top: 20px;
 }
+
 .header-text h1 span {
   color: #d55929;
 }
+
 /*about*/
 
 #about {
