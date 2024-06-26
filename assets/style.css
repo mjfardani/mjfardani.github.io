@@ -46,6 +46,7 @@ nav {
 }
 nav .navbarkiri {
   margin-left: 20px;
+  cursor: default;
 }
 
 .logo {
