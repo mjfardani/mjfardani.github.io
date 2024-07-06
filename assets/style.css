@@ -353,10 +353,9 @@ nav ul li a:hover::after {
 .icons a img {
   height: 30px;
   width: auto;
-  margin-right: 10px;
+  padding-right: 10px;
   display: inline-block;
   transition: transform 0.5s;
-  cursor: hover;
 }
 .icons a img:hover {
   transform: translateY(-5px);
